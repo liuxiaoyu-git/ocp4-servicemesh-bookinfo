@@ -26,3 +26,4 @@ export GATEWAY_URL=$(oc -n istio-system get route istio-ingressgateway -o jsonpa
 grep -q GATEWAY_URL $HOME/.bashrc || echo "export GATEWAY_URL=$GATEWAY_URL" >> ~/.bashrc
 
 source $HOME/.bashrc
+watch oc get pod
