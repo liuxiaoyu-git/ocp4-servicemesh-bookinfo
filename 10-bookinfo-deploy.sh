@@ -24,3 +24,5 @@ oc apply -n $BOOKINFO_PROJECT -f https://raw.githubusercontent.com/istio/istio/$
 
 export GATEWAY_URL=$(oc -n istio-system get route istio-ingressgateway -o jsonpath='{.spec.host}')
 grep -q GATEWAY_URL $HOME/.bashrc || echo "export GATEWAY_URL=$GATEWAY_URL" >> ~/.bashrc
+
+source $HOME/.bashrc
