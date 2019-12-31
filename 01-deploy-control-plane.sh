@@ -86,3 +86,4 @@ EOF
 
 echo '** This is not a production grade control plane setup **'
 echo "Use 'watch oc get pods -n ${ISTIO_PROJECT}' to watch the istio resources to be created"
+watch oc get pods -n ${ISTIO_PROJECT}
